@@ -20,16 +20,29 @@
     
 // }
 
-fn main() {
-    // println!("{}, {}", "Hello", "world!");
-    let x =10;
-    let y = 5;
+// fn main() {
+//     // println!("{}, {}", "Hello", "world!");
+//     let x =10;
+//     let y = 5;
 
-    println!("{}",x + y ); //montre seulement le resultat
-    println!("{} + {} = {}",x, y, x + y ); //montre toute l'opération
-    println!("{} - {} = {}",x, y, x - y );
-    println!("{} * {} = {}",x, y, x * y );
-    println!("{} / {} = {}",x, y, x / y );
-    println!("{} % {} = {}",x, y, x % y );
+//     println!("{}",x + y ); //montre seulement le resultat
+//     println!("{} + {} = {}",x, y, x + y ); //montre toute l'opération
+//     println!("{} - {} = {}",x, y, x - y );
+//     println!("{} * {} = {}",x, y, x * y );
+//     println!("{} / {} = {}",x, y, x / y );
+//     println!("{} % {} = {}",x, y, x % y );
 
+// }
+
+fn main () {
+    // scalar types
+    //integers, floating-point, booleans, characters
+    
+    // 8, 16, 32, 64, 128 
+    let x: i8 =5;
+    let y: i8 = 10;
+
+    println!("{}",x-y);
+
+    
 }
