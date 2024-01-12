@@ -38,11 +38,30 @@ fn main () {
     // scalar types
     //integers, floating-point, booleans, characters
     
+    //integer
     // 8, 16, 32, 64, 128 
     let x: i8 =5;
     let y: i8 = 10;
 
+    //10: 98_128
+    //16 (hexadecimal): 0x15f
+    //8 (octal) : 0o123
+    //2 (binaire) : 0b1111_0000
+
     println!("{}",x-y);
+
+    // floating point
+    let dec = 2.5;
+    println!("{}", dec);
+
+    //booleans
+    let boolean = true;
+    println!("{}",boolean);
+
+    //characters
+    let ch = 'z';
+    println!("{}",ch);
 
     
 }
+ 
