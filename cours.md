@@ -142,12 +142,67 @@ fn main() {
 
    ```Rust
 
+fn main() {
+    let mut x =0;
+
+    //while ==> boucle tant que 
+
+    while x < 20 {
+        x +=1;
+        if x %3 != 0 { continue; }
+        if x * x > 200 { break ; }
+        println!("{}", x);
+    }
+}
   ```
 
    ```Rust
 
+fn main() {
+    let mut x =0;
+
+    loop {
+        if x * x > 200 { break; }
+        println!("{}", x);
+        x +=1;
+    }
+// loop est identique que un while true,  cela ferai une boucle infinie ,  il faut mettre une condition de break
+
+}
   ```
 
    ```Rust
+
+fn main() {
+    let mut x =0;
+
+    for x in 1..11 {
+        if x == 5 { break; }
+        println!("{}", x);
+    }
+} 
+  ```
+
+    ```Rust
+
+  ```
+
+    ```Rust
+
+  ```
+
+    ```Rust
+
+  ```
+
+    ```Rust
+
+  ```
+
+    ```Rust
+
+  ```
+
+    ```Rust
 
   ```
