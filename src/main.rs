@@ -34,34 +34,61 @@
 
 // }
 
-fn main () {
-    // scalar types
-    //integers, floating-point, booleans, characters
+// fn main () {
+//     // scalar types
+//     //integers, floating-point, booleans, characters
     
-    //integer
-    // 8, 16, 32, 64, 128 
-    let x: i8 =5;
-    let y: i8 = 10;
+//     //integer
+//     // 8, 16, 32, 64, 128 
+//     let x: i8 =5;
+//     let y: i8 = 10;
 
-    //10: 98_128
-    //16 (hexadecimal): 0x15f
-    //8 (octal) : 0o123
-    //2 (binaire) : 0b1111_0000
+//     //10: 98_128
+//     //16 (hexadecimal): 0x15f
+//     //8 (octal) : 0o123
+//     //2 (binaire) : 0b1111_0000
 
-    println!("{}",x-y);
+//     println!("{}",x-y);
 
-    // floating point
-    let dec = 2.5;
-    println!("{}", dec);
+//     // floating point
+//     let dec = 2.5;
+//     println!("{}", dec);
 
-    //booleans
-    let boolean = true;
-    println!("{}",boolean);
+//     //booleans
+//     let boolean = true;
+//     println!("{}",boolean);
 
-    //characters
-    let ch = 'z';
-    println!("{}",ch);
+//     //characters
+//     let ch = 'z';
+//     println!("{}",ch);
 
     
+// }
+
+fn main() {
+
+    // bool = true/false
+    // ==    !=     <  <=  >    >=
+
+    // let x = 5;
+    // let y = 10;
+
+    // println!("{}", x == y); //false
+    // println!("{}", x != y); //true
+    // println!("{}", x < y); //true
+    // println!("{}", x <= y); //true
+    // println!("{}", x > y); //false
+    // println!("{}", x >= y); //false
+
+    //println!("{}", "abc" < "abcd"); 
+
+    // + - * / % 
+    let mut z = 10;
+    z += 2; // c'est une opération et une assignation a la fois z = z+1
+    z -=4;
+    z *= 2;
+    z /= 4;
+
+    println!("{}", z);
+
 }
- 
