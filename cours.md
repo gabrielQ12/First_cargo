@@ -20,7 +20,9 @@
      println!("La valeur de bar est : {bar}.");
     
  }
- ``````
+```
+-------------
+
 ```Rust
  fn main() {
       println!("{}, {}", "Hello", "world!");
@@ -35,7 +37,9 @@
      println!("{} % {} = {}",x, y, x % y );
 
  }
- ```
+```
+-------------
+
 ```Rust
  fn main () {
     //scalar types : https://doc.rust-lang.org/std/index.html#primitives
@@ -67,7 +71,9 @@
 
     
  }
- ``````
+```
+-------------
+
 ```Rust
  fn main() {
 
@@ -96,9 +102,10 @@
      println!("{}", z);
 
  }
- ```
+```
+-------------
 
- ```Rust
+```Rust
 
 fn main() {
     let x = -5;
@@ -111,7 +118,9 @@ fn main() {
     }
     println!("{}", condition);
 }
- ```
+```
+-------------
+
 ```Rust
 fn main() {
     let age = 17;
@@ -128,9 +137,10 @@ fn main() {
     
 }
 
- ```
+```
+-------------
 
- ```Rust
+```Rust
 
 fn main() {
     let x = 5;
@@ -138,7 +148,8 @@ fn main() {
     
     println!("{}", y);
 }
-  ```
+```
+-------------
 
 ```Rust
 
@@ -154,7 +165,8 @@ fn main() {
         println!("{}", x);
     }
 }
-  ```
+```
+-------------
 
 ```Rust
 
@@ -169,7 +181,9 @@ fn main() {
 // loop est identique que un while true,  cela ferai une boucle infinie ,  il faut mettre une condition de break
 
 }
-  ```
+```
+-------------
+
 ```Rust
 
 fn main() {
@@ -181,6 +195,7 @@ fn main() {
     }
 } 
 ```
+-------------
 
 ```Rust
 
@@ -193,6 +208,7 @@ fn main() {
     }
 } 
 ```
+-------------
 
 ```Rust
 
@@ -220,6 +236,7 @@ fn main() {
 }
 
 ```
+-------------
 
 ```Rust
 
@@ -235,6 +252,7 @@ fn main() {
 }
 
 ```
+-------------
 
 ```Rust
 fn main() {
@@ -248,11 +266,78 @@ fn main() {
     
 }  
 ```
+-------------
 
-    ```Rust
+```Rust
 
-  ```
+fn main() {
+    let x = vec![1, 2, 3];
+    let mut y = vec![0;0];
+    
+    println!("Vec X:{:?}, Vec Y: {:?}", x,y);
 
-    ```Rust
+    y=x;
 
-  ```
+    println!("Vec Y: {:?}",y);
+
+
+}  
+```
+-------------
+
+```Rust
+
+fn main() {
+   let x = {
+    let y =3;
+    y+1
+   }; 
+
+   print!("La valeur de X est : {}", x);
+}  
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
+-------------
+
+```Rust
+
+```
