@@ -1,12 +1,7 @@
 
 fn main() {
-   
-   let x = foo_fonction(30);
-   println!("La valeur de X est {}", x);
+    let tup = (5, 3.14, true);
+    let (x, y, z) = tup;
 
-}  
-
-
-fn foo_fonction(x: i32) -> i32 {
-    x
+    println!("{x} {y} {z}");
 }
