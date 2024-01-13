@@ -316,11 +316,37 @@ fn foo_fonction(x: i32) -> i32 {
 
 ```Rust
 
+fn main() {
+    let tup = (5, 3.14, true);
+    let (x, y, z) = tup;
+    
+
+    println!("{x} {y} {z}");
+}
 ```
 -------------
 
 ```Rust
 
+fn main() {
+    //#[derive(Debug)]
+    struct Dog{
+        name: String,
+        age: i32,
+        gender: String,
+        under_10: bool
+    }
+
+    let first_dog = Dog{
+        name: String::from("Woof"),
+        age: 8,
+        gender: String::from("Male"),
+        under_10: true
+    };
+
+    println!("Mon chien s'appelle {}, il a {} ans, c'est un {} et il a moins de 10 ans,  c'est {}", 
+    first_dog.name,first_dog.age,first_dog.gender,first_dog.under_10);    
+}
 ```
 -------------
 

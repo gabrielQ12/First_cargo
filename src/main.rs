@@ -1,7 +1,21 @@
 
-fn main() {
-    let tup = (5, 3.14, true);
-    let (x, y, z) = tup;
+struct Dog{
+    name: String,
+    age: i32,
+    
 
-    println!("{x} {y} {z}");
+}
+
+
+fn main() {
+    //#[derive(Debug)]
+    let first_dog = register_dog(String::from("Woof"),8);
+    println!("Mon chien s'appelle {}, il a {} ans.", 
+    first_dog.name,first_dog.age); 
+}
+fn register_dog(name:String,age:i32) -> Dog {
+    Dog{
+        name: name,
+        age: age
+    }
 }
