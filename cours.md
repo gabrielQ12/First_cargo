@@ -377,6 +377,25 @@ fn register_dog(name:String,age:i32) -> Dog {
 
 ```Rust
 
+fn main() {
+    println!("\t Tabulation.  \n Nouvelle ligne !  c:\\node\\link ");
+    println!(r#" Tabulation.  Nouvelle ligne !  c:\node\Link "#); 
+    println!("{:#?}", b" \t Tabulation.  \n Nouvelle ligne !"); 
+    println!("{:X}", 'H' as u32);
+    println!("\u{48}");
+
+    let x = 50;
+    println!("{}", x);
+    println!("{x}");
+    println!("{0}",x);
+
+     let y = 9;
+     let y_ref=&y;
+     println!("{:p}", y_ref);
+
+     let name = "Alex";
+     println!("{name:-^12}");
+}
 ```
 -------------
 
