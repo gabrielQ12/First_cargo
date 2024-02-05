@@ -400,18 +400,140 @@ fn main() {
 -------------
 
 ```Rust
+fn main() {
+   // let mut x = String::from ("hello");
+   // x.push_str(", world ! ");
 
+   // println!("{x}");
+
+   // {
+    // let foo = String::from("Hello");
+   // }
+
+
+
+   // &str / String
+
+   // &str est immuable il ne peut pas etre modifié (accès a la memoir rapide et efficace)
+        // la mémoire est allouée a la compilation et est stockée dans le binaire
+        // (pas besoin de gérer la mémoire nous même)
+
+    // --- //
+
+   // String est mutable (accès a la memoir plus lent)
+        // la mémoire doit etre demander a l'allocateur ,  nous devons gérer la mémoire nous même 
+        // L'utilisation de String::from permet de demander la mémoire a l'allocateur
+        // quand nous refermons le scoop la mémoire est libérée automatiquement
+
+        let  x = String::from ("Alex");
+        let y = x.clone();
+
+        println!("{x} {y}");
+
+        let foo =5;
+        let bar = foo;
+
+        println!("{foo} {bar}");
+
+}
+```
+-------------
+
+```Rust
+fn main() {
+    let x = String::from("Alex");
+    let x_len = calculate_length(&x);
+    println!("Length de {x} est : {x_len}!");
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+
+    // ici x ne peu pas etre allouer une second fois,  il est donc passé en référence grace a l'utilisation de &
+    // la fonction calculate_length prend donc une référence de x
+    // la fonction ne prend pas possession de x
+    // la fonction ne peut pas changer x
+    // la fonction ne peut pas libérer x
+    // la fonction ne peut pas faire quoi que ce soit qui pourrait invalider x
+
+    // l'owner est toujours x , et la fonction ne fait que l'emprunter
+
+    // créer une référence en Rust s'apelle le "borrowing"
+    // le "borrowing" permet de passer une référence à une fonction plutot que de passer la valeur
+    // cela permet de ne pas avoir à copier de grandes quantités de données
+    // cela permet de ne pas avoir à donner la propriété de ces données à une autre variable
+    // cela permet de ne pas avoir à libérer ces données lorsque la fonction a terminé
+    // cela permet de ne pas avoir à penser à la manière dont ces données pourraient être utilisées après que la fonction a terminé
+    
+
+}
 ```
 -------------
 
 ```Rust
 
+fn main() {
+    let mut x = String::from("Alex");
+    println!("{x}");
+    modify_borrow(&mut x);
+    println!("{x}");
+}
+
+fn modify_borrow(s: &mut String) {
+    s.push_str(", c'est mon nom");
+
+    // une référence est immuable
+    // on ne peut pas modifier la valeur d'une référence
+    // pour modifié une référence il faut ajouter &mut
+    // il est impossible de créer deux reference modifiable sur une seul valeur 
+    
+}
 ```
 -------------
 
 ```Rust
 
+fn main() {
+    let bar = foo();
+    println!("{bar}");
+}
+
+fn foo() -> String {
+    let s = String::from("Alex");
+    s
+}
 ```
+
+-------------
+
+```Rust
+
+```
+
+-------------
+
+```Rust
+
+```
+
+-------------
+
+```Rust
+
+```
+
+-------------
+
+```Rust
+
+```
+
+-------------
+
+```Rust
+
+```
+
 -------------
 
 ```Rust

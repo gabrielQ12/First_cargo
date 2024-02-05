@@ -1,7 +1,11 @@
 
 
 fn main() {
-   let mut x = String::from ("hello");
-   x.push_str(", world ! ");
-   println!("{x}");
+    let bar = foo();
+    println!("{bar}");
+}
+
+fn foo() -> String {
+    let s = String::from("Alex");
+    s
 }
