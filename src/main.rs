@@ -1,43 +1,13 @@
 
-#[allow(dead_code)]
-
-enum Continent {
-    Africa,
-    Asia,
-    Europe,
-    NorthAmerica,
-    Oceania,
-    SouthAmerica,
+fn find_something<T : std::fmt::Display>(something: T) {
+    println!("Votre valeur est: {}", something);
 }
 
-#[allow(dead_code)]
-enum CardinalPoint {
-    North,
-    South,
-    East,
-    West,
-}
+
 
 fn main() {
-    let continent = Continent::Europe;
-
-    match continent  {
-        Continent::Europe => println!("EU"),
-        Continent::Africa => println!("AF"),
-        Continent::Asia => println!("AS"),
-        Continent::NorthAmerica => println!("NA"),
-        Continent::Oceania => println!("OC"),
-        Continent::SouthAmerica => println!("SA"),
-    }
-
-    let c_point = CardinalPoint::North;
-
-    match c_point {
-        CardinalPoint::North => println!("N"),
-        CardinalPoint::South => println!("S"),
-        CardinalPoint::East => println!("E"),
-        CardinalPoint::West => println!("W"),
-    }
+    find_something(7);
+    find_something(String::from("value"));
+    
 
 }
-

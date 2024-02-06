@@ -602,12 +602,73 @@ fn main() {
 
 ```Rust
 
+#[allow(dead_code)]
+
+enum Continent {
+    Africa,
+    Asia,
+    Europe,
+    NorthAmerica,
+    Oceania,
+    SouthAmerica,
+}
+
+#[allow(dead_code)]
+enum CardinalPoint {
+    North,
+    South,
+    East,
+    West,
+}
+
+fn main() {
+    let continent = Continent::Europe;
+
+    match continent  {
+        Continent::Europe => println!("EU"),
+        Continent::Africa => println!("AF"),
+        Continent::Asia => println!("AS"),
+        Continent::NorthAmerica => println!("NA"),
+        Continent::Oceania => println!("OC"),
+        Continent::SouthAmerica => println!("SA"),
+    }
+
+    let c_point = CardinalPoint::North;
+
+    match c_point {
+        CardinalPoint::North => println!("N"),
+        CardinalPoint::South => println!("S"),
+        CardinalPoint::East => println!("E"),
+        CardinalPoint::West => println!("W"),
+    }
+
+}
+
+
 ```
 
 -------------
 
 ```Rust
 
+
+// generic = un type ou un autre suivant les entrant 
+// le type généric est par convention représenté par <T>
+
+
+
+fn find_something<T>(something: T) -> T {
+    something
+}
+
+
+
+fn main() {
+    let my_number = find_something(7);
+    let my_string = find_something(String::from("value"));
+    println!( "Votre nombre et texte sont :  : {} / {}", my_number,my_string);
+
+}
 ```
 
 -------------
